@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <p id="p1" onclick="changeText('p1')">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolorem facere magnam cupiditate fuga. Corporis excepturi delectus dolorum, vero explicabo facere quibusdam. Eligendi repudiandae nam exercitationem, necessitatibus nostrum illo minima?</p>
+    <p id="p2" onclick="changeText('p2')">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate nulla est rem fugit molestiae earum et totam commodi aspernatur optio, in provident accusamus esse beatae illo autem ipsa quod!</p>
+    <img onclick="changeimg('img1')" id="img1" width="100" src="https://webpfabrica.github.io/itsmart/images/imageall.jpg" alt="">
+    <img onclick="changeimg2('img2')" id="img2" width="200" src="https://webpfabrica.github.io/itsmart/images/imageall.jpg" alt="">
+    <img onclick="changeimg3('img3')" id="img3" width="300" src="https://webpfabrica.github.io/itsmart/images/imageall.jpg" alt="">
+    <button onclick="smallimg">Зменшети всі картинки</button>
+<script>
+        function changeText(id){
+            let p1 = document.getElementById(id);
+            p1.style.color='red';
+            p1.style.fontSize = "32px";
+        }
+        function changeimg(id){
+            let img = document.getElementById(id);
+            img.style.width = "300px";
+            img3.style.width = "100px";
+            img2.style.width = "100px"
+        }
+        function changeimg3(id){
+            let img = document.getElementById(id);
+            img.style.width = "300px";
+            img2.style.width = "100px";
+            img1.style.width = "100px";
+        }
+        function changeimg2(id){
+            let img = document.getElementById(id);
+            img.style.width = "300px";
+            img1.style.width = "100px";
+            img3.style.width = "100px";
+        }
+        function smallimg(id){
+            let img = document.getElementById(id);
+            img1.style.width = "100px";
+            img2.style.width = "100px";
+            img3.style.width = "100px";
+        }
+    </script>
+</body>
+</html>

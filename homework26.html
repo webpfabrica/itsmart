@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div>
+        <img width="300" onclick="changeimgsmall(id)" id="images" src="https://webpfabrica.github.io/itsmart/images/imageall.jpg" alt="">
+    </div>
+    <div>
+        <button onclick="changeimgbig()">збільшити фото</button>
+    </div>
+    <script>
+        function changeimgsmall(id){
+            let images = document.getElementById("images");
+            images.style.width = "300px";
+        }
+        function changeimgbig(id){
+            let images = document.getElementById("images");
+            images.style.width = "500px";
+        }
+    </script>
+</body>
+</html>

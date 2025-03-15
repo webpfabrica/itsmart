@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <button onclick="
+        document.body.style.backgroundColor='#333333';
+        document.body.style.color='white'">Темна тема</button>
+    <button onclick="
+    document.body.style.backgroundColor='white';
+    document.body.style.color='#333333'">Світла тема</button>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto rem quis, culpa laboriosam consectetur voluptate esse asperiores! Neque consequatur tempore magnam, officia fugiat beatae quas sit nobis? Amet, non ratione.</p>
+    <button onclick="toggleTheme()">Зміна теми</button>
+    <script>
+        let ligthTheme = true;
+
+        function toggleTheme(){
+            if (ligthTheme){
+                document.body.style.backgroundColor="#333333";
+                document.body.style.color="white";
+                ligthTheme = false;
+            } else{
+                document.body.style.backgroundColor="white";
+                document.body.style.color="#333333";
+                ligthTheme = true;
+            }
+        }
+    </script>
+</body>
+</html>
